@@ -12,6 +12,7 @@ const config: Config = {
       black: colors.black,
       white: colors.white,
       transparent: colors.transparent,
+      slate: colors.slate,
       primary: {
         base: '#67e8f9',
         // hover: '#799CEC',
