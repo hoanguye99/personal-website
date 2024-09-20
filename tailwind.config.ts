@@ -13,6 +13,7 @@ const config: Config = {
       white: colors.white,
       transparent: colors.transparent,
       slate: colors.slate,
+      sky: colors.sky,
       primary: {
         base: '#67e8f9',
         // hover: '#799CEC',
@@ -26,77 +27,79 @@ const config: Config = {
         tag: '#cbd5e1',
       },
     },
-    fontSize: {
-      'heading-0-sm': [
-        '2.25rem',
-        {
-          lineHeight: '2.5rem',
-          fontWeight: '700',
-        },
-      ],
-      'heading-0': [
-        '3rem',
-        {
-          lineHeight: '1',
-          fontWeight: '700',
-        },
-      ],
-      'heading-1-sm': [
-        '1.125rem',
-        {
-          lineHeight: '1.75rem',
-          fontWeight: '500',
-        },
-      ],
-      'heading-1': [
-        '1.25rem',
-        {
-          lineHeight: '1.75rem',
-          fontWeight: '500',
-        },
-      ],
-      'heading-2': [
-        '0.875rem',
-        {
-          lineHeight: '1.25rem',
-          fontWeight: '700',
-        },
-      ],
-      title: [
-        '1rem',
-        {
-          lineHeight: '1.375',
-          fontWeight: '500',
-        },
-      ],
-      // 'subtitle': [
-      //   '18px',
-      //   {
-      //     lineHeight: '26px',
-      //     fontWeight: '400',
-      //   },
-      // ],
-      // 'body-1': [
-      //   '18px',
-      //   {
-      //     lineHeight: '28px',
-      //     fontWeight: '400',
-      //   },
-      // ],
-      body: [
-        '0.875rem',
-        {
-          lineHeight: '1.5',
-          fontWeight: '400',
-        },
-      ],
-      tag: [
-        '0.875rem',
-        {
-          lineHeight: '1.25rem',
-          fontWeight: '500',
-        },
-      ],
+    extend: {
+      fontSize: {
+        'heading-0-sm': [
+          '2.25rem',
+          {
+            lineHeight: '2.5rem',
+            fontWeight: '700',
+          },
+        ],
+        'heading-0': [
+          '3rem',
+          {
+            lineHeight: '1',
+            fontWeight: '700',
+          },
+        ],
+        'heading-1-sm': [
+          '1.125rem',
+          {
+            lineHeight: '1.75rem',
+            fontWeight: '500',
+          },
+        ],
+        'heading-1': [
+          '1.25rem',
+          {
+            lineHeight: '1.75rem',
+            fontWeight: '500',
+          },
+        ],
+        'heading-2': [
+          '0.875rem',
+          {
+            lineHeight: '1.25rem',
+            fontWeight: '700',
+          },
+        ],
+        title: [
+          '1rem',
+          {
+            lineHeight: '1.25',
+            fontWeight: '500',
+          },
+        ],
+        // 'subtitle': [
+        //   '18px',
+        //   {
+        //     lineHeight: '26px',
+        //     fontWeight: '400',
+        //   },
+        // ],
+        // 'body-1': [
+        //   '18px',
+        //   {
+        //     lineHeight: '28px',
+        //     fontWeight: '400',
+        //   },
+        // ],
+        body: [
+          '0.875rem',
+          {
+            lineHeight: '1.5',
+            fontWeight: '400',
+          },
+        ],
+        tag: [
+          '0.75rem',
+          {
+            lineHeight: '1.25rem',
+            fontWeight: '500',
+          },
+        ],
+      },
     },
   },
   future: {
