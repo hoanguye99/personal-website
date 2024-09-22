@@ -10,7 +10,7 @@ interface ProjectLinkProps {
 const ProjectLink = (props: ProjectLinkProps) => {
   return (
     <Link
-      className={`text-typography-title text-title group-hover:text-primary-base transition-colors ${props.className}`}
+      className={`text-typography-title text-title lg:text-[1.125rem] group-hover:text-primary-base transition-colors ${props.className}`}
       href={props.href}
     >
       <span>{props.text}</span>

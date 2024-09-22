@@ -3,13 +3,13 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <header className="">
+    <header className="lg:max-h-[calc(100vh_-_10rem)] lg:flex lg:flex-col lg:justify-between lg:sticky lg:top-20">
       <div>
         <h1 className="text-heading-0-sm sm:text-heading-0 text-typography-title">
-          Brittany Chiang
+          Hoang Nguyen
         </h1>
         <h2 className="mt-3 text-heading-1-sm sm:text-heading-1 text-typography-title">
-          Senior Frontend Engineer
+          Frontend Engineer
         </h2>
         <p className="mt-4 max-w-xs text-typography-body">
           I build pixel-perfect, engaging, and accessible digital experiences.

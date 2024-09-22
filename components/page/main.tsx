@@ -6,14 +6,14 @@ import HighlightLink from '../ui/highlight-link'
 
 const Main = () => {
   return (
-    <>
-      <main className="pt-24 flex flex-col gap-16">
+    <div>
+      <main className="pt-24 lg:pt-0 flex flex-col gap-16 lg:gap-32">
         <AboutSection />
         <ExperienceSection />
         <ProjectSection />
       </main>
-      <footer className="mt-16">
-        <p className="text-body text-typography-subtitle leading-normal max-w-md">
+      <footer className="mt-16 lg:mt-32">
+        <p className="text-body text-typography-subtitle leading-normal max-w-md lg:max-w-xl">
           Design inspired by
           <HighlightLink
             href="https://brittanychiang.com/"
@@ -33,7 +33,7 @@ const Main = () => {
           typeface.
         </p>
       </footer>
-    </>
+    </div>
   )
 }
 
