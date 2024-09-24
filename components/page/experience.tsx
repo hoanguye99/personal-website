@@ -13,63 +13,43 @@ const ExperienceSection = () => {
       <SectionHeader title="EXPERIENCE" />
       <ol className="group/list flex flex-col gap-12 ">
         <SingleProject
-          timeline="2024 — Present"
+          timeline="2023 — Present"
           projectLink={
             <ProjectLink
-              href="https://www.klaviyo.com/"
-              text="Senior Frontend Engineer, Accessibility · Klaviyo"
+              href="https://aka247.fpt.com/"
+              text="Frontend Developer, Mentor • AKA247"
             />
           }
           content={
-            <>
-              Build and maintain critical components used to construct Klaviyo’s
-              frontend, across the whole product. Work closely with
-              cross-functional teams, including developers, designers, and
-              product managers, to implement and advocate for best practices in
-              web accessibility.
-            </>
-          }
-          techList={
-            <TechList
-              list={['JavaScript', 'TypeScript', 'React', 'Storybook']}
-            />
-          }
-          projectImage={
-            <ProjectImage alt="Personal Website Image" src={personalWebImage} />
-          }
-        />
-        <SingleProject
-          timeline="2018 — 2024"
-          projectLink={
-            <ProjectLink
-              href="https://www.klaviyo.com/"
-              text="Lead Engineer · Upstatement"
-            />
-          }
-          content={
-            <>
-              Build, style, and ship high-quality websites, design systems,
-              mobile apps, and digital experiences for a diverse array of
-              projects for clients including Harvard Business School, Everytown
-              for Gun Safety, Pratt Institute, Koala Health, Vanderbilt
-              University, The 19th News, and more. Provide leadership within
-              engineering department through close collaboration, knowledge
-              shares, and spearheading the development of internal tools.
-            </>
+            <ul className="list-inside list-disc indent-[-1rem] pl-4 *:mb-1.5">
+              <li>
+                Develop features for a SAAS application that provides a service
+                desk solution for service providers.
+              </li>
+              <li>
+                Build and maintain the project design system based on FPT IS
+                guidelines and Figma design, document components using Storybook
+              </li>
+              <li>
+                Communicate and exchange ideas with BA & PM to transform
+                creative concepts into refined UIs
+              </li>
+              <li>
+                Mentor new team members, review UIs and code before merging,
+                improve code quality
+              </li>
+            </ul>
           }
           techList={
             <TechList
               list={[
-                'JavaScript',
-                'TypeScript',
-                'HTML & SCSS',
-                'React',
                 'Next.js',
-                'React Native',
-                'WordPress',
-                'Contentful',
-                'Node.js',
-                'PHP',
+                'Typescript',
+                'Tailwind CSS',
+                'Tanstack Query',
+                'React Hook Form',
+                'Zustand',
+                'Framer Motion',
               ]}
             />
           }
@@ -78,46 +58,70 @@ const ExperienceSection = () => {
           }
         />
         <SingleProject
-          timeline="July - Dec 2017"
+          timeline="June 2022 — 2023"
           projectLink={
             <ProjectLink
-              href="https://www.klaviyo.com/"
-              text="UI Engineer Co-op· Apple"
+              href="https://fpt-is.com/en/eagleeye-msoc/"
+              text="Frontend Developer • EagleEye mSOC"
             />
           }
           content={
-            <>
-              Developed and styled interactive web apps for Apple Music,
-              including the user interface of Apple Music’s embeddable web
-              player widget for in-browser user authorization and full song
-              playback.
-            </>
+            <ul className="list-inside list-disc indent-[-1rem] pl-4 *:mb-1.5">
+              <li>
+                Developed features for a SAAS application portal that monitors
+                security incidents and manages threats
+              </li>
+              <li>
+                Researched new tech and built front-end project from the ground
+                up
+              </li>
+            </ul>
           }
           techList={
-            <TechList list={['Ember', 'SCSS', 'Javascript', 'MusicKit.js']} />
+            <TechList list={['Next.js', 'Tailwind CSS', 'Tanstack Query']} />
           }
           projectImage={
             <ProjectImage alt="Personal Website Image" src={personalWebImage} />
           }
         />
         <SingleProject
-          timeline="2016 - 2017"
+          timeline="June 2021 - June 2022"
           projectLink={
             <ProjectLink
-              href="https://www.klaviyo.com/"
-              text="Developer · Scout Studio"
+              href="https://openapi.bidv.com.vn/devportal/"
+              text="Frontend Developer • BIDV Open API"
             />
           }
           content={
-            <>
-              Collaborated with other student designers and engineers on
-              pro-bono projects to create new brands, design systems, and
-              websites for organizations in the community.
-            </>
+            <ul className="list-inside list-disc indent-[-1rem] pl-4 *:mb-1.5">
+              <li>
+                Developed a Drupal custom theme that conforms to client brand
+                guidelines and Figma design for BIDV Developer Portal
+              </li>
+              <li>
+                Write documents, migrated code and ensured consistency between
+                different environments
+              </li>
+            </ul>
           }
-          techList={
-            <TechList list={['Jekyll', 'SCSS', 'Javascript', 'WordPress']} />
+          techList={<TechList list={['Drupal', 'Sass', 'HTML', 'CSS']} />}
+          projectImage={
+            <ProjectImage alt="Personal Website Image" src={personalWebImage} />
           }
+        />
+        <SingleProject
+          timeline="2020 - June 2021"
+          projectLink={<ProjectLink href="" text="Integration Engineer" />}
+          content={
+            <ul className="list-inside list-disc indent-[-1rem] pl-4 *:mb-1.5">
+              <li>Developed Open API services using IBM API Connect</li>
+              <li>
+                Developed ESB REST and SOAP services using IBM App Connect
+                Enterprise
+              </li>
+            </ul>
+          }
+          techList={<TechList list={['Java', 'JavaScript', 'Node.js']} />}
           projectImage={
             <ProjectImage alt="Personal Website Image" src={personalWebImage} />
           }
