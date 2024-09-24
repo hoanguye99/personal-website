@@ -16,7 +16,7 @@ const Main = () => {
         <p className="text-body text-typography-subtitle leading-normal max-w-md lg:max-w-xl">
           Design inspired by
           <HighlightLink
-            href="https://brittanychiang.com/"
+            href="https://github.com/bchiang7"
             text=" Brittany Chiang. "
           />
           Built with
