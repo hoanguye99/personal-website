@@ -1,8 +1,6 @@
-import React from 'react'
-import SectionHeader from './section-header'
 import ProjectLink from '../ui/project-link'
-import Image from 'next/image'
-import personalWebImage from './personal_web.png'
+import personal from './personal.png'
+import SectionHeader from './section-header'
 import ProjectImage from '../ui/project-image'
 import { SingleProject } from './experience'
 const ProjectSection = () => {
@@ -23,7 +21,7 @@ const ProjectSection = () => {
             </>
           }
           projectImage={
-            <ProjectImage alt="Personal Website Image" src={personalWebImage} />
+            <ProjectImage alt="Personal Website Image" src={personal} />
           }
         />
       </ol>

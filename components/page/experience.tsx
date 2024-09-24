@@ -1,11 +1,13 @@
 import React from 'react'
 import SectionHeader from './section-header'
-import Tag from '../ui/tag'
-import Link from 'next/link'
 import ProjectLink from '../ui/project-link'
 import TechList from '../ui/tech-list'
 import ProjectImage from '../ui/project-image'
 import personalWebImage from './personal_web.png'
+import BIDVIMG from './bidv.png'
+import AKA from './aka247.png'
+import SOC from './soc.png'
+import IBM from './ibm.png'
 
 const ExperienceSection = () => {
   return (
@@ -43,6 +45,7 @@ const ExperienceSection = () => {
           techList={
             <TechList
               list={[
+                'React',
                 'Next.js',
                 'Typescript',
                 'Tailwind CSS',
@@ -54,7 +57,7 @@ const ExperienceSection = () => {
             />
           }
           projectImage={
-            <ProjectImage alt="Personal Website Image" src={personalWebImage} />
+            <ProjectImage className="bg-white" alt="AKA247 Image" src={AKA} />
           }
         />
         <SingleProject
@@ -78,10 +81,12 @@ const ExperienceSection = () => {
             </ul>
           }
           techList={
-            <TechList list={['Next.js', 'Tailwind CSS', 'Tanstack Query']} />
+            <TechList
+              list={['React', 'Next.js', 'Tailwind CSS', 'Tanstack Query']}
+            />
           }
           projectImage={
-            <ProjectImage alt="Personal Website Image" src={personalWebImage} />
+            <ProjectImage className="bg-white" alt="mSOC Image" src={SOC} />
           }
         />
         <SingleProject
@@ -106,7 +111,7 @@ const ExperienceSection = () => {
           }
           techList={<TechList list={['Drupal', 'Sass', 'HTML', 'CSS']} />}
           projectImage={
-            <ProjectImage alt="Personal Website Image" src={personalWebImage} />
+            <ProjectImage alt="BIDV Open API Image" src={BIDVIMG} />
           }
         />
         <SingleProject
@@ -122,9 +127,7 @@ const ExperienceSection = () => {
             </ul>
           }
           techList={<TechList list={['Java', 'JavaScript', 'Node.js']} />}
-          projectImage={
-            <ProjectImage alt="Personal Website Image" src={personalWebImage} />
-          }
+          projectImage={<ProjectImage alt="IBM API Connect Image" src={IBM} />}
         />
       </ol>
       <div className="group mt-8">

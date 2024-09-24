@@ -4,6 +4,7 @@ import React from 'react'
 interface ProjectImageProps {
   src: StaticImageData
   alt: string
+  className?: string
 }
 
 const ProjectImage = (props: ProjectImageProps) => {
@@ -13,7 +14,7 @@ const ProjectImage = (props: ProjectImageProps) => {
       width="200"
       height="48"
       src={props.src}
-      className="mt-3 lg:mt-0 rounded border-2 border-typography-title/10 transition hover:border-typography-title/30"
+      className={`mt-3 lg:mt-0 rounded border-2 border-typography-title/10 transition hover:border-typography-title/30 ${props.className}`}
     ></Image>
   )
 }
