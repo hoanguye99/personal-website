@@ -133,7 +133,7 @@ const ExperienceSection = () => {
       <div className="group mt-8">
         <ProjectLink
           className="text-[1.1rem]"
-          href="https://www.klaviyo.com/"
+          href="/Hoang Nguyen Resume.pdf"
           text="View Full Resume"
         />
       </div>
