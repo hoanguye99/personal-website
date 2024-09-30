@@ -18,9 +18,8 @@ const ProjectSection = () => {
           }
           content={
             <>
-              Video course that teaches how to build a web app with the Spotify
-              Web API. Topics covered include the principles of REST APIs, user
-              auth flows, Node, Express, React, Styled Components, and more.
+              Personal blog that teaches team members how to get started with
+              ReactJS, NextJS and Tanstack Query
             </>
           }
           projectImage={

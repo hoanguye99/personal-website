@@ -8,6 +8,7 @@ import BIDVIMG from './bidv.png'
 import AKA from './aka247.png'
 import SOC from './soc.png'
 import IBM from './ibm.png'
+import { AdditionalLink } from '../ui/highlight-link'
 
 const ExperienceSection = () => {
   return (
@@ -59,6 +60,12 @@ const ExperienceSection = () => {
           projectImage={
             <ProjectImage className="bg-white" alt="AKA247 Image" src={AKA} />
           }
+          additionalLinks={
+            <AdditionalLink
+              href="https://fpt-is.com/aka247/"
+              text={'Product Flyer'}
+            />
+          }
         />
         <SingleProject
           timeline="June 2022 — 2023"
@@ -88,6 +95,12 @@ const ExperienceSection = () => {
           projectImage={
             <ProjectImage className="bg-white" alt="mSOC Image" src={SOC} />
           }
+          additionalLinks={
+            <AdditionalLink
+              href="https://fpt-is.com/eagleeye-msoc/"
+              text={'Product Flyer'}
+            />
+          }
         />
         <SingleProject
           timeline="June 2021 - June 2022"
@@ -112,6 +125,12 @@ const ExperienceSection = () => {
           techList={<TechList list={['Drupal', 'Sass', 'HTML', 'CSS']} />}
           projectImage={
             <ProjectImage alt="BIDV Open API Image" src={BIDVIMG} />
+          }
+          additionalLinks={
+            <AdditionalLink
+              href="https://bidv.com.vn/bidv/tin-tuc/tin-ve-bidv/bidv-open-api-dan-dau-xu-the-ngan-hang-mo"
+              text={'Product Flyer'}
+            />
           }
         />
         <SingleProject
@@ -145,6 +164,7 @@ interface SingleProjectProps {
   timeline?: string
   projectLink: React.ReactNode
   content: React.ReactNode
+  additionalLinks?: React.ReactNode
   techList?: React.ReactNode
   projectImage: React.ReactNode
 }
@@ -164,6 +184,9 @@ export const SingleProject = (props: SingleProjectProps) => {
             <h3 className="group">{props.projectLink}</h3>
             <p className="mt-2 text-body">{props.content}</p>
           </div>
+          {props.additionalLinks && (
+            <div className="flex gap-3 py-2">{props.additionalLinks}</div>
+          )}
           {props.techList}
         </div>
         {props.projectImage}
