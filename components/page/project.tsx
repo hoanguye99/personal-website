@@ -10,6 +10,7 @@ const ProjectSection = () => {
 
       <ol>
         <SingleProject
+          href={'https://hoanguye99.netlify.app/blog/'}
           projectLink={
             <ProjectLink
               href="https://hoanguye99.netlify.app/blog/"
