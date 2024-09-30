@@ -17,9 +17,8 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://raw.githubusercontent.com/gitdagray/my-blogposts/main/images/og-card.png',
-        secureUrl:
-          'https://raw.githubusercontent.com/gitdagray/my-blogposts/main/images/og-card.png',
+        url: 'https://hoanguye99.vercel.app/og.jpg',
+        secureUrl: 'https://hoanguye99.vercel.app/og.jpg',
         width: 1200,
         height: 630,
         alt: 'Preview image for Hoang Nguyen',
