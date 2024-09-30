@@ -27,7 +27,7 @@ interface AdditionalLinkProps {
 export const AdditionalLink = (props: AdditionalLinkProps) => {
   return (
     <Link
-      className={`text-typography-title/90 font-medium text-title text-sm hover:text-primary-base/90 transition-colors flex items-center ${props.className}`}
+      className={`text-typography-title/90 font-medium text-xs sm:text-title sm:text-sm hover:text-primary-base/90 transition-colors flex items-center ${props.className}`}
       href={props.href}
     >
       <svg

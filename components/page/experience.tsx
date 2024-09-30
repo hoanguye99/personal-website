@@ -9,6 +9,8 @@ import AKA from './aka247.png'
 import SOC from './soc.png'
 import IBM from './ibm.png'
 import { AdditionalLink } from '../ui/highlight-link'
+import Link from 'next/link'
+import LinkWrapper from '../ui/link-wrapper'
 
 const ExperienceSection = () => {
   return (
@@ -16,6 +18,7 @@ const ExperienceSection = () => {
       <SectionHeader title="EXPERIENCE" />
       <ol className="group/list flex flex-col gap-12 ">
         <SingleProject
+          href="https://aka247.fpt.com/"
           timeline="2023 — Present"
           projectLink={
             <ProjectLink
@@ -46,7 +49,6 @@ const ExperienceSection = () => {
           techList={
             <TechList
               list={[
-                'React',
                 'Next.js',
                 'Typescript',
                 'Tailwind CSS',
@@ -68,6 +70,7 @@ const ExperienceSection = () => {
           }
         />
         <SingleProject
+          href="https://fpt-is.com/en/eagleeye-msoc/"
           timeline="June 2022 — 2023"
           projectLink={
             <ProjectLink
@@ -103,6 +106,7 @@ const ExperienceSection = () => {
           }
         />
         <SingleProject
+          href="https://openapi.bidv.com.vn/devportal/"
           timeline="June 2021 - June 2022"
           projectLink={
             <ProjectLink
@@ -134,6 +138,7 @@ const ExperienceSection = () => {
           }
         />
         <SingleProject
+          href=""
           timeline="2020 - June 2021"
           projectLink={<ProjectLink href="" text="Integration Engineer" />}
           content={
@@ -161,6 +166,7 @@ const ExperienceSection = () => {
 }
 
 interface SingleProjectProps {
+  href: string
   timeline?: string
   projectLink: React.ReactNode
   content: React.ReactNode
@@ -172,25 +178,27 @@ interface SingleProjectProps {
 export const SingleProject = (props: SingleProjectProps) => {
   return (
     <li>
-      <div className="grid lg:grid-cols-4 lg:gap-6 transition-all lg:group-has-[:hover]/list:opacity-50 lg:hover:!opacity-100 lg:hover:bg-slate-800/50 lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg lg:py-4 lg:px-6 lg:-mx-6 rounded-lg">
-        <div className="lg:col-span-3 lg:order-last">
-          {props.timeline && (
-            <header className="mb-2 mt-1 text-xs uppercase tracking-wide font-semibold text-typography-subtitle">
-              {props.timeline}
-            </header>
-          )}
+      <LinkWrapper href={props.href}>
+        <div className="grid lg:grid-cols-4 lg:gap-6 transition-all lg:group-has-[:hover]/list:opacity-50 lg:hover:!opacity-100 lg:hover:bg-slate-800/50 lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg lg:py-4 lg:px-6 lg:-mx-6 rounded-lg">
+          <div className="lg:col-span-3 lg:order-last">
+            {props.timeline && (
+              <header className="mb-2 mt-1 text-xs uppercase tracking-wide font-semibold text-typography-subtitle">
+                {props.timeline}
+              </header>
+            )}
 
-          <div>
-            <h3 className="group">{props.projectLink}</h3>
-            <p className="mt-2 text-body">{props.content}</p>
+            <div>
+              <h3 className="group">{props.projectLink}</h3>
+              <p className="mt-2 text-body">{props.content}</p>
+            </div>
+            {props.additionalLinks && (
+              <div className="flex gap-3 py-2">{props.additionalLinks}</div>
+            )}
+            {props.techList}
           </div>
-          {props.additionalLinks && (
-            <div className="flex gap-3 py-2">{props.additionalLinks}</div>
-          )}
-          {props.techList}
+          {props.projectImage}
         </div>
-        {props.projectImage}
-      </div>
+      </LinkWrapper>
     </li>
   )
 }

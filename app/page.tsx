@@ -14,7 +14,7 @@ export default function Home() {
             )"`,
         }}
       ></div>
-      <div className="grid lg:grid-cols-[4fr_6fr] lg:gap-16">
+      <div className="grid lg:grid-cols-[4fr_5fr] lg:gap-16">
         <Header />
         <Main />
       </div>
