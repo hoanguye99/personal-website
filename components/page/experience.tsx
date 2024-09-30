@@ -179,7 +179,7 @@ export const SingleProject = (props: SingleProjectProps) => {
   return (
     <li>
       <LinkWrapper href={props.href}>
-        <div className="grid lg:grid-cols-4 lg:gap-6 transition-all lg:group-has-[:hover]/list:opacity-50 lg:hover:!opacity-100 lg:hover:bg-slate-800/50 lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg lg:py-4 lg:px-6 lg:-mx-6 rounded-lg">
+        <div className="group grid lg:grid-cols-4 lg:gap-6 transition-all lg:group-has-[:hover]/list:opacity-50 lg:hover:!opacity-100 lg:hover:bg-slate-800/50 lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg lg:py-4 lg:px-6 lg:-mx-6 rounded-lg">
           <div className="lg:col-span-3 lg:order-last">
             {props.timeline && (
               <header className="mb-2 mt-1 text-xs uppercase tracking-wide font-semibold text-typography-subtitle">
@@ -188,7 +188,7 @@ export const SingleProject = (props: SingleProjectProps) => {
             )}
 
             <div>
-              <h3 className="group">{props.projectLink}</h3>
+              <h3 className="">{props.projectLink}</h3>
               <p className="mt-2 text-body">{props.content}</p>
             </div>
             {props.additionalLinks && (
