@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { forwardRef, Ref } from 'react'
 import SectionHeader from './section-header'
 import TechList from '../ui/tech-list'
 
-const AboutSection = () => {
+const AboutSection = forwardRef<HTMLElement, any>((props, ref) => {
   return (
-    <section>
+    <section id="about" ref={ref}>
       <SectionHeader title="ABOUT" />
       <div className="flex flex-col gap-4">
         <p>
@@ -72,6 +72,6 @@ const AboutSection = () => {
       </div>
     </section>
   )
-}
+})
 
 export default AboutSection

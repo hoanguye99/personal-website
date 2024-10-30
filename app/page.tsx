@@ -1,7 +1,11 @@
+'use client'
+
 import Header from '@/components/page/header'
 import Main from '@/components/page/main'
+import { useState } from 'react'
 
 export default function Home() {
+  const [inViews, setInViews] = useState([true, false, false])
   return (
     <div className="max-w-screen-xl mx-auto min-h-screen px-6 py-12 md:px-12 md:py-20 lg:px-24">
       <div
@@ -15,8 +19,8 @@ export default function Home() {
         }}
       ></div>
       <div className="grid lg:grid-cols-[4fr_5fr] lg:gap-16">
-        <Header />
-        <Main />
+        <Header inViews={inViews} />
+        <Main setInViews={setInViews} />
       </div>
     </div>
   )

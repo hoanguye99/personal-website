@@ -3,9 +3,10 @@ import personal from './personal.png'
 import SectionHeader from './section-header'
 import ProjectImage from '../ui/project-image'
 import { SingleProject } from './experience'
-const ProjectSection = () => {
+import { forwardRef } from 'react'
+const ProjectSection = forwardRef<HTMLElement, any>((props, ref) => {
   return (
-    <section>
+    <section id="project" ref={ref}>
       <SectionHeader title="PERSONAL PROJECT" />
 
       <ol>
@@ -30,6 +31,6 @@ const ProjectSection = () => {
       </ol>
     </section>
   )
-}
+})
 
 export default ProjectSection

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import SectionHeader from './section-header'
 import ProjectLink from '../ui/project-link'
 import TechList from '../ui/tech-list'
@@ -12,9 +12,9 @@ import { AdditionalLink } from '../ui/highlight-link'
 import Link from 'next/link'
 import LinkWrapper from '../ui/link-wrapper'
 
-const ExperienceSection = () => {
+const ExperienceSection = forwardRef<HTMLElement, any>((props, ref) => {
   return (
-    <section>
+    <section id="experience" ref={ref}>
       <SectionHeader title="EXPERIENCE" />
       <ol className="group/list flex flex-col gap-12 ">
         <SingleProject
@@ -163,7 +163,7 @@ const ExperienceSection = () => {
       </div>
     </section>
   )
-}
+})
 
 interface SingleProjectProps {
   href: string

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-const Header = () => {
+const Header = ({ inViews }: { inViews: boolean[] }) => {
   return (
     <header className="lg:max-h-[calc(100vh_-_10rem)] lg:flex lg:flex-col lg:justify-between lg:sticky lg:top-20">
       <div>
@@ -14,6 +14,11 @@ const Header = () => {
         <p className="mt-4 max-w-xs text-typography-body">
           I build pixel-perfect, engaging, and accessible digital experiences.
         </p>
+        <ul className="hidden lg:flex mt-16 font-bold text-[13px] uppercase !tracking-widest flex-col gap-4">
+          <BookMark href="about" active={inViews[0]} />
+          <BookMark href="experience" active={inViews[1]} />
+          <BookMark href="project" active={inViews[2]} />
+        </ul>
       </div>
       <ul
         className="ml-1 mt-8 flex items-center gap-5"
@@ -77,6 +82,33 @@ const SocialIcon = (props: SocialIconProps) => {
         <span className="sr-only">{props.sr}</span>
         {props.children}
       </Link>
+    </li>
+  )
+}
+
+interface BookMarkProps {
+  href: string
+  active: boolean
+}
+
+const BookMark = (props: BookMarkProps) => {
+  return (
+    <li>
+      <a
+        href={`#${props.href}`}
+        className={`transition-all duration-300 ease-in-out flex items-center gap-4 ${
+          props.active ? 'text-typography-title' : 'text-typography-subtitle'
+        }`}
+      >
+        <div
+          className={`h-[1px] origin-left transition-all duration-300 ease-in-out  ${
+            props.active
+              ? 'bg-typography-title w-16'
+              : 'bg-typography-subtitle w-8'
+          }`}
+        ></div>
+        <span className="uppercase">{props.href}</span>
+      </a>
     </li>
   )
 }
