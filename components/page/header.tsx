@@ -14,7 +14,7 @@ const Header = ({ inViews }: { inViews: boolean[] }) => {
         <p className="mt-4 max-w-xs text-typography-body">
           I build pixel-perfect, engaging, and accessible digital experiences.
         </p>
-        <ul className="hidden lg:flex mt-16 font-bold text-[13px] uppercase !tracking-widest flex-col gap-4">
+        <ul className="hidden lg:flex mt-16 font-bold text-[13px] uppercase !tracking-widest flex-col gap-5">
           <BookMark href="about" active={inViews[0]} />
           <BookMark href="experience" active={inViews[1]} />
           <BookMark href="project" active={inViews[2]} />
@@ -96,12 +96,12 @@ const BookMark = (props: BookMarkProps) => {
     <li>
       <a
         href={`#${props.href}`}
-        className={`transition-all duration-300 ease-in-out flex items-center gap-4 ${
+        className={`transition-all duration-300 ease-in-out flex items-center gap-4 group hover:text-typography-title ${
           props.active ? 'text-typography-title' : 'text-typography-subtitle'
         }`}
       >
         <div
-          className={`h-[1px] origin-left transition-all duration-300 ease-in-out  ${
+          className={`h-[1px] origin-left transition-all duration-300 ease-in-out group-hover:bg-typography-title ${
             props.active
               ? 'bg-typography-title w-16'
               : 'bg-typography-subtitle w-8'
