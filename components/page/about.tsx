@@ -8,17 +8,24 @@ const AboutSection = forwardRef<HTMLElement, any>((props, ref) => {
       <SectionHeader title="ABOUT" />
       <div className="flex flex-col gap-4">
         <p>
-          Hello! My name is Hoang and I like creating things that live on the
-          internet. I enjoy building software in the sweet spot where design and
+          Hello, my name is Hoang and I create things that live on the internet.
+          I enjoy building software in the sweet spot where design and
           engineering meet — things that look good but are also built well under
           the hood.
         </p>
-        <p>
+        {/* <p>
           I spend a great deal of time tinkering with design systems, as I
           firmly believe that a high-quality UI is built on high-quality
           components. Components should not only be visually appealing but also
           interactive, with smooth and fluid transitions to enhance the user
           experience.
+        </p> */}
+        <p>
+          I have had 5+ years working at FPT IS, 3+ years working as a frontend
+          developer. In my job, I focus on developing new features, improving
+          existing UIs, maintaining the design system, reviewing code and
+          mentoring new team members. I've also written a personal blog to
+          explain the fundamentals of Tanstack Query.
         </p>
         <p>
           I am currently seeking a new opportunity where I can contribute to a
