@@ -22,10 +22,10 @@ const AboutSection = forwardRef<HTMLElement, any>((props, ref) => {
         </p> */}
         <p>
           I have had 5+ years working at FPT IS, 3+ years working as a frontend
-          developer. In my job, I focus on developing new features, improving
-          existing UIs, maintaining the design system, reviewing code and
-          mentoring new team members. I've also written a personal blog to
-          explain the fundamentals of Tanstack Query.
+          developer. In my job, I mainly focus on developing new features,
+          improving existing UIs, maintaining the design system, reviewing code
+          and mentoring new team members. I've also written a personal blog to
+          explain the fundamentals of Tanstack Query to my team members.
         </p>
         <p>
           I am currently seeking a new opportunity where I can contribute to a
