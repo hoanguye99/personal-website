@@ -21,16 +21,11 @@ const AboutSection = forwardRef<HTMLElement, any>((props, ref) => {
           experience.
         </p> */}
         <p>
-          I have had 5+ years working at FPT IS, 3+ years working as a frontend
+          I have had 3+ years working as a frontend
           developer. In my job, I mainly focus on developing new features,
           improving existing UIs, maintaining the design system, reviewing code
           and mentoring new team members. I've also written a personal blog to
           explain the fundamentals of Tanstack Query to my team members.
-        </p>
-        <p>
-          I am currently seeking a new opportunity where I can contribute to a
-          product-focused team and collaborate in an English-speaking
-          environment
         </p>
         <div className="grid gap-5 lg:grid-cols-4 lg:mt-5">
           <p className="-mt-[2px]">Recent techstack:</p>
@@ -40,7 +35,7 @@ const AboutSection = forwardRef<HTMLElement, any>((props, ref) => {
                 Programming Languages:
               </p>
               <TechList
-                list={['JavaScript', 'TypeScript', 'HTML', 'CSS', 'Sass']}
+                list={['JavaScript', 'TypeScript', 'HTML', 'CSS', 'Sass', 'GraphQL']}
               />
             </div>
             <div>
@@ -52,6 +47,7 @@ const AboutSection = forwardRef<HTMLElement, any>((props, ref) => {
                   'React',
                   'Next.js',
                   'Tailwind CSS',
+                  'shadcn/ui',
                   'Framer Motion',
                   'Tanstack Query',
                   'React Hook Form',
@@ -66,11 +62,11 @@ const AboutSection = forwardRef<HTMLElement, any>((props, ref) => {
               <TechList
                 list={[
                   'Git',
-                  'Vercel',
+                  'Vite',
+                  'Rsbuild',
+                  'Micro Frontend',
+                  'Vitest',
                   'Storybook',
-                  'shadcn/ui',
-                  'CVA',
-                  'Figma',
                 ]}
               />
             </div>
